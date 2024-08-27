@@ -1,0 +1,35 @@
+.intro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 20px;
+    background-color: #f5f5f5; /* Light background */
+  }
+  
+  .intro-content {
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+  }
+  
+  .intro-image {
+    max-width: 300px;
+    margin-right: 50px;
+    border-radius: 50%;
+  }
+  
+  .intro-text {
+    max-width: 600px;
+  }
+  
+  .intro-text h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  .intro-text p {
+    font-size: 18px;
+    line-height: 1.6;
+  }
+  
