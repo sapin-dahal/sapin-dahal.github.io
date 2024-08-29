@@ -1,17 +1,17 @@
 /* General Styles */
 body {
-  margin: 0;
-  font-family: 'Arial', sans-serif;
-  background-color: #f4f4f4;
-  color: #333;
-  text-align: center;
-}
-
-/* Navigation Bar */
-.navbar {
-    background-color: white; /* or transparent if you want no background */
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    text-align: center;
+  }
+  
+  /* Navigation Bar Styles */
+  .navbar {
+    background-color: white;
     padding: 15px 0;
-    box-shadow: 0px 4px 2px -2px gray; /* Adds a slight shadow for effect */
+    box-shadow: 0px 4px 2px -2px gray;
     position: fixed;
     width: 100%;
     top: 0;
@@ -32,77 +32,87 @@ body {
   
   .navbar ul li a {
     text-decoration: none;
-    color: black; /* Dark color similar to the screenshot */
+    color: black;
     font-size: 16px;
     font-family: 'Arial', sans-serif;
     font-weight: bold;
   }
   
   .navbar ul li a:hover {
-    color: #00796b; /* Change color on hover */
+    color: #00796b;
   }
   
-  /* Active Link Style */
   .navbar ul li a.active {
-    color: #00796b; /* The same color used for hover */
+    color: #00796b;
   }
   
-  /* Ensuring Content is not Hidden under the Navbar */
-  body {
-    padding-top: 60px; /* Adjust based on the height of your navbar */
+  /* Section Styles */
+  .home-section {
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 60px; /* To avoid overlap with navbar */
+    position: relative;
   }
   
-
-/* Home Section */
-.home-section {
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  z-index: 2;
-}
-
-.center-content {
-  max-width: 600px;
-  text-align: center;
-}
-
-.right-image img {
-    max-width: 400px;
+  .content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    width: 100%;
+    padding: 20px;
+  }
+  
+  .center-content {
+    max-width: 600px;
+    text-align: left;
+  }
+  
+  .right-image {
+    flex-shrink: 0; /* Ensures the image does not grow/shrink with the container */
+  }
+  
+  .right-image img {
+    max-width: 200px; /* Make the image smaller */
+    height: auto;
     border-radius: 10px; /* Optional: Add rounded corners */
+    display: block;
+    margin-left: auto; /* Pushes the image to the right edge */
   }
-
-h1 {
-  font-size: 48px;
-  font-weight: bold;
-  margin-bottom: 20px;
-}
-
-.tagline {
-  font-size: 18px;
-  margin-bottom: 30px;
-}
-
-.social-icons a {
-  margin: 0 10px;
-  color: #333;
-  text-decoration: none;
-  font-size: 24px;
-}
-
-.social-icons a:hover {
-  color: #00796b;
-}
-
-/* Background */
-.background {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
-  background: url('images/background.png') no-repeat center center/cover;
-  opacity: 0.2; /* Adjust opacity to make it subtle */
-}
+  
+  h1 {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .tagline {
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+  
+  .social-icons a {
+    margin: 0 10px;
+    color: #333;
+    text-decoration: none;
+    font-size: 24px;
+  }
+  
+  .social-icons a:hover {
+    color: #00796b;
+  }
+  
+  /* Background */
+  .background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background: url('images/background.png') no-repeat center center/cover;
+    opacity: 0.2;
+  }
+  
