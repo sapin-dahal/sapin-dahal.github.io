@@ -1,25 +1,41 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Your Website</title>
-  <link rel="stylesheet" href="Frontend/styles.css">
+  <title>Your Name</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
-    <h1>Welcome to My Website</h1>
-    <nav>
-      <ul>
-        <li><a href="Frontend/home.html">Home</a></li>
-        <li><a href="Frontend/intro.html">Intro</a></li>
-        <li><a href="Frontend/contact.html">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-  <main>
-    <p>This is the main landing page. Use the links above to navigate to different sections of the website.</p>
-  </main>
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <ul>
+      <li><a href="#home" class="active">HOME</a></li>
+      <li><a href="#intro">INTRO</a></li>
+      <li><a href="#services">SERVICES</a></li>
+      <li><a href="#blog">BLOG</a></li>
+      <li><a href="#websites">WEBSITES</a></li>
+      <li><a href="#portfolio">PORTFOLIO</a></li>
+      <li><a href="#testimonials">TESTIMONIALS</a></li>
+      <li><a href="#contact">CONTACT</a></li>
+    </ul>
+  </nav>
+
+  <!-- Home Section -->
+  <section id="home" class="home-section">
+    <div class="center-content">
+      <h1>Your Name</h1>
+      <p class="tagline">Data Engineer | Making Data Work for Us</p>
+      <div class="social-icons">
+        <a href="https://twitter.com/yourprofile" target="_blank">Twitter Icon</a>
+        <a href="https://github.com/yourprofile" target="_blank">GitHub Icon</a>
+        <a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn Icon</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Background (Optional) -->
+  <div class="background"></div>
+
 </body>
 </html>
