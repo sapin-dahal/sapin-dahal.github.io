@@ -1,3 +1,5 @@
+/* Frontend/styles.css */
+
 /* General Styles */
 body {
     margin: 0;
@@ -7,36 +9,49 @@ body {
     text-align: center;
   }
   
-  /* Section Styles */
-  .section {
-    padding: 100px 20px;
-  }
-  
-  .container {
-    max-width: 800px;
-    margin: 0 auto;
-  }
-  
-  /* Home Section */
-  .home {
+  /* Header Styles */
+  header {
     background-color: #222;
     color: white;
+    padding: 20px 0;
   }
   
-  .home h1 {
-    font-size: 60px;
-    margin-bottom: 20px;
+  header h1 {
+    margin: 0;
+    font-size: 36px;
   }
   
-  .home h2 {
-    font-size: 24px;
-    font-weight: 300;
+  nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0 0;
   }
   
-  /* Intro Section */
-  .intro {
+  nav ul li {
+    display: inline;
+    margin: 0 15px;
+  }
+  
+  nav ul li a {
+    color: #ffcc00;
+    text-decoration: none;
+  }
+  
+  nav ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Section Styles */
+  .main-section {
+    padding: 50px 20px;
+  }
+  
+  .home-section {
     background-color: #fff;
-    color: #333;
+  }
+  
+  .intro-section {
+    background-color: #e2e2e2;
   }
   
   .intro-img {
@@ -45,18 +60,17 @@ body {
     margin-top: 20px;
   }
   
-  /* Contact Section */
-  .contact {
+  .contact-section {
+    background-color: #ddd;
+  }
+  
+  /* Footer Styles */
+  footer {
     background-color: #222;
     color: white;
-  }
-  
-  .contact a {
-    color: #ffcc00;
-    text-decoration: none;
-  }
-  
-  .contact a:hover {
-    text-decoration: underline;
+    padding: 10px 0;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
   }
   
