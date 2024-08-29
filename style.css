@@ -9,31 +9,49 @@ body {
 
 /* Navigation Bar */
 .navbar {
-  background-color: transparent;
-  padding: 20px 0;
-}
-
-.navbar ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-}
-
-.navbar ul li {
-  margin: 0 15px;
-}
-
-.navbar ul li a {
-  text-decoration: none;
-  color: #333;
-  font-size: 16px;
-}
-
-.navbar ul li a.active {
-  color: #00796b;
-}
+    background-color: white; /* or transparent if you want no background */
+    padding: 15px 0;
+    box-shadow: 0px 4px 2px -2px gray; /* Adds a slight shadow for effect */
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .navbar ul li {
+    margin: 0 20px;
+  }
+  
+  .navbar ul li a {
+    text-decoration: none;
+    color: black; /* Dark color similar to the screenshot */
+    font-size: 16px;
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+  }
+  
+  .navbar ul li a:hover {
+    color: #00796b; /* Change color on hover */
+  }
+  
+  /* Active Link Style */
+  .navbar ul li a.active {
+    color: #00796b; /* The same color used for hover */
+  }
+  
+  /* Ensuring Content is not Hidden under the Navbar */
+  body {
+    padding-top: 60px; /* Adjust based on the height of your navbar */
+  }
+  
 
 /* Home Section */
 .home-section {
@@ -49,6 +67,11 @@ body {
   max-width: 600px;
   text-align: center;
 }
+
+.right-image img {
+    max-width: 400px;
+    border-radius: 10px; /* Optional: Add rounded corners */
+  }
 
 h1 {
   font-size: 48px;
