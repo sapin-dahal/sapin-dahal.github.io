@@ -5,6 +5,10 @@ body {
     background-color: #f4f4f4;
     color: #333;
     text-align: center;
+    background-image: url('background.webp');
+    background-size: cover; /* Ensure the background covers the entire screen */
+    background-position: center; /* Center the background image */
+    background-attachment: fixed; /* Keep the background fixed when scrolling */
   }
   
   /* Navigation Bar Styles */
@@ -63,6 +67,8 @@ body {
     max-width: 1200px;
     width: 100%;
     padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent background for readability */
+    border-radius: 10px; /* Optional: Rounded corners */
   }
   
   .center-content {
